@@ -1,0 +1,327 @@
+@font-face {
+    font-family: 'Poppins';
+    src: local('Poppins'), url("../fonts/Poppins-Regular.ttf");
+}
+@font-face {
+    font-family: 'Poppins bold';
+    src: local('Poppins bold'), url("../fonts/Poppins-Bold.ttf");
+}
+@font-face {
+    font-family: 'DM Sans';
+    src: local('DM Sans'), url("../fonts/DMSans-Regular.ttf");
+}
+@font-face {
+    font-family: 'DM Sans Med';
+    src: local('DM Sans Med'), url("../fonts/DMSans-Medium.ttf");
+}
+@font-face {
+    font-family: 'DM Sans Bold';
+    src: local('DM Sans Bold'), url("../fonts/DMSans-Bold.ttf");
+}
+:root {
+    --primary-text:#1B2124;
+    --active-text:#000000;
+}
+div{
+    font-family: 'Poppins' ;
+    color: white;
+}
+.btn{
+    white-space: nowrap;
+    border-radius: 100px;
+}
+.form-control{
+    border-radius: 100px;
+}
+.col{
+    padding-inline: 0;
+}
+@media screen and (min-width: 1400px){
+    .navbar-expand-xl{
+        flex-wrap: nowrap !important;
+        justify-content: flex-start !important;
+    }
+}
+
+.nav-link {
+    color: white !important;
+    margin-left: 14px !important;
+margin-right: 14px !important;
+padding-inline: 0px !important;
+}
+.nav-link:active {
+    color: yellow !important;
+}
+.dropdown-menu {
+    background-color: grey !important;
+    border:none !important;
+    border-radius: 0px !important;
+}
+.dropdown-item {
+    color: white !important;
+}
+.row{
+    margin-left: 0px ;
+    margin-right: 0px ;
+}
+.nav-down{
+    background: linear-gradient(90deg, #5271C4 0%, #B19FFF 48%, #ECA1FE 100%);
+    transition: 1s;
+    box-shadow: 0 0 10px black;
+}
+.c-h1{
+    color:var(--primary-text);
+    font-family: 'Poppins Bold';
+    font-size: 32px;
+    line-height: 48px;
+}
+.c-h2{
+    color:var(--active-text);
+    font-size: 16px;
+    line-height: 28px;
+}
+.c-shadow{
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.04);
+}
+.btn-pri{
+    background-color: #2E32BA;
+    color: #FFFFFF;
+    border: none;
+}
+.btn-sec{
+    background-color: #2FCC8B;
+    color: #ffffff;
+    border: none;
+}
+.btn-gradient{
+    background: linear-gradient(90deg, #FF9A9E 0%, #FECFEF 99%);
+    color: #1B2124;
+    border: none;
+}
+.carousel-item .card{
+    border-radius: 12px;
+}
+.c2{
+    padding-block: 56px;
+}
+.c2-h1{
+    margin-bottom: 8px;
+}
+.c2-h2{
+    color:var(--active-text);
+    font-size: 16px;
+    line-height: 28px;
+}
+.c2-rate{
+    margin-right: 52px;
+}
+.c3{
+    padding-top: 176px;
+    padding-inline: 120px;
+    background-color: #EBF4FF;
+}
+.c3-blue{
+    color: #2E32BA;
+    font-size: 16px;
+    line-height: 28px;
+    font-family: 'Poppins Bold';
+}
+.carousel-h1{
+    font-family: 'Poppins Bold';
+font-style: normal;
+font-size: 16px;
+line-height: 28px;
+color: var(--primary-text);
+}
+.c4{
+    padding-inline: 120px;
+    padding-block: 100px;
+}
+.c4-h1{
+    margin-bottom: 32px;
+}
+.c4-h2{
+    color:var(--active-text);
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    margin-bottom: 92px;
+}
+.c4-p1{
+    color:var(--active-text);
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 24px;
+    font-family: 'Poppins Bold';
+}
+.c4-d1{
+    color:var(--active-text);
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    margin-bottom: 48px;
+}
+.c4-pattern{
+    position: absolute;
+    left: 0;
+    /* top: -100px; */
+    z-index: -1;
+}
+.c4-sticker1{
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    margin-top: 118px;
+}
+.c4-sticker2{
+    position: absolute;
+    right: 50%;
+    margin-right: -65px;
+    z-index: -1;
+    margin-top: 36px;
+}
+.c4-col-1{
+    padding-left: 0;
+    padding-right: 36px;
+}
+.c4-col-2{
+    padding-left: 36px;
+    padding-right: 0;
+}
+
+.c5{
+background-color: #EBFFF0;
+padding: 108px 0px 108px 120px
+}
+.c5-button{
+    border-radius: 100px;
+    padding: 12px 24px;
+}
+.c6{
+    padding-block: 80px;
+}
+.c6-green{
+    color: #2FCC8B;
+    font-size: 16px;
+    line-height: 28px;
+    font-family: 'Poppins Bold';
+}
+.c6-sticker{
+    position: absolute;
+    transform: matrix(0.53, -0.85, -0.85, -0.53, 0, 0);
+}
+iframe{
+    border-radius: 24px;
+}
+.c7{
+    padding-block: 72px;
+    padding-inline: 120px;
+    background-color: #EBF4FF;
+}
+.c7-h1{
+    margin-bottom: 112px;
+}
+.carousel2 .card {
+    padding-top: 124px !important;
+}
+.carousel2 img{
+    margin-bottom: -20%;
+    position: relative;
+    z-index: 3;
+}
+.c8{
+    padding-top: 88px;
+    padding-left: 120px;
+    padding-right: 0;
+    padding-bottom: 64px;
+}
+.c8-h1{
+    margin-bottom: 64px;
+}
+.c8-separator{
+    width: 100%;
+    height: 2px;
+    background-color: #EBEAED;
+    margin-top: 28px;
+    margin-bottom: 24px;
+}
+.ques-div{
+    padding-block: 72px;
+    padding-left: 64px;
+    padding-right: 120px;
+    background-color: #EBF4FF;
+    border-start-start-radius: 40px;
+    border-end-start-radius: 40px;
+    margin-left: 100px;
+}
+.c8-ques{
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 28px;
+color: var(--primary-text);
+margin-bottom: 16px;
+}
+.c8-ans{
+    font-size: 16px;
+line-height: 28px;
+font-family: 'Poppins Bold';
+color: var(--primary-text);
+margin-bottom: 16px;
+}
+.c8-p1{
+    font-family: 'Poppins Bold';
+font-style: normal;
+font-size: 16px;
+line-height: 28px;
+color: var(--primary-text);
+}
+.c8-d1{
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 28px;
+color: var(--primary-text);
+}
+.c8-sticker{
+    position: absolute;
+    right: 360px;
+    /* z-index: -1; */
+    margin-top: -116px;
+}
+.carousel2-h1{
+    margin-bottom: 36px;
+}
+.c9{
+    color: white;
+    padding: 90px 120px;
+    background-color: #2E32BA;
+}
+.c9 .row{
+    margin-bottom: 64px;
+}
+.c9-h1{
+font-family: 'DM Sans Med';
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 32px;
+margin-bottom: 32px;
+}
+.c9-d1{
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 26px;
+}
+.c9-p1{
+    margin-bottom: 20px;
+}
+.c9-p-selected{
+    font-family: 'DM Sans Med';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+}
