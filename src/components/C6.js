@@ -6,7 +6,7 @@ import sticker from "../images/video-right_patrn.png";
 class C6 extends Component {
   render() {
     return (
-      <Container fluid className="c6">
+      <Container fluid className="c6 c-pad">
         {/*<img
           className="c6-sticker"
           src={sticker}
@@ -21,7 +21,7 @@ class C6 extends Component {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim, in at
           ipsum ac tristique semper auctor adipiscing eu. Iaculis justo,
         </div>
-        <div>
+        <div className="react-player">
           <img
             src={pattern}
             style={{
@@ -36,8 +36,6 @@ class C6 extends Component {
             url="https://www.youtube.com/watch?v=kJNEbRhMjpo"
             style={{ marginInline: "auto", borderRadius: "24px" }}
             controls={true}
-            height="240px"
-            width="570px"
           />
         </div>
       </Container>

@@ -16,38 +16,19 @@ class C1 extends Component {
     return (
       <Container
         fluid
+        id="home"
+        className="c1 c-pad"
         style={{
           backgroundImage: `url(${background})`,
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          height: "100vh",
-          paddingInline: "120px",
         }}
       >
         <Row className="h-100">
-          <Col
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-              paddingInline: "0px",
-            }}
-          >
-            <h1
-              style={{
-                fontSize: "48px",
-                fontWeight: "700",
-                fontFamily: "Poppins bold",
-                marginBottom: "32px",
-              }}
-            >
-              The Smart Card for <br />
-              Child's pocket money
+          <Col className="d-flex flex-column justify-content-center col-12 col-md-6">
+            <h1 className="c1-h1 mb-5">
+              The Smart Card
+              <br className="c1-br" /> for Child's<span> pocket money</span>
             </h1>
-            <div style={{ fontSize: "16px", fontWeight: "700" }}>
-              Get our ios or Android app
-            </div>
+            <div className="c1-h2">Get our ios or Android app</div>
             <div
               style={{
                 marginBottom: "36px",
@@ -55,15 +36,15 @@ class C1 extends Component {
                 fontWeight: "400",
               }}
             >
-              Input your number below and we will send you an app
-              <br /> download link.
+              Input your number below and we will send you an app download link.
             </div>
             <Card
               style={{
                 borderRadius: "30px",
                 paddingLeft: "24px",
                 marginBottom: "40px",
-                width: "fit-content",
+                width: "100%",
+                maxWidth: "520px",
               }}
             >
               <div className="d-flex align-items-center">
@@ -77,15 +58,16 @@ class C1 extends Component {
                   style={{
                     backgroundColor: "#1E0E62",
                     width: "2px",
-                    height: "50%",
-                    marginInline: "4px",
+                    height: "34%",
+                    marginInline: "10px",
                   }}
                 ></span>
                 <FormControl
                   placeholder="9999999999"
                   aria-label=""
                   aria-describedby="basic-addon1"
-                  style={{ border: "none", width: "auto" }}
+                  style={{ border: "none" }}
+                  className="ps-0"
                 />
                 <Button
                   className="btn-gradient"
@@ -99,12 +81,12 @@ class C1 extends Component {
                 </Button>
               </div>
             </Card>
+
             <div>
               App available on <img src={googlePlay} height="40px" />{" "}
               <img src={apple} height="40px" />
             </div>
           </Col>
-          <Col></Col>
         </Row>
       </Container>
     );

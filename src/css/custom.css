@@ -34,7 +34,7 @@ div{
     border-radius: 100px;
 }
 .col{
-    padding-inline: 0;
+    padding-inline: 0 ;
 }
 @media screen and (min-width: 1400px){
     .navbar-expand-xl{
@@ -67,12 +67,12 @@ padding-inline: 0px !important;
 .nav-down{
     background: linear-gradient(90deg, #5271C4 0%, #B19FFF 48%, #ECA1FE 100%);
     transition: 1s;
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 40%);
 }
 .c-h1{
     color:var(--primary-text);
     font-family: 'Poppins Bold';
-    font-size: 32px;
+    font-size: 28px;
     line-height: 48px;
 }
 .c-h2{
@@ -82,6 +82,10 @@ padding-inline: 0px !important;
 }
 .c-shadow{
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.04);
+}
+.c-pad{
+    padding-inline: 24px;
+    text-align: center;
 }
 .btn-pri{
     background-color: #2E32BA;
@@ -100,6 +104,25 @@ padding-inline: 0px !important;
 }
 .carousel-item .card{
     border-radius: 12px;
+    border: none;
+}
+.c1{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.c1-h1{
+    font-family: 'Poppins Bold';
+    font-size: 40px;
+}
+.c1-br{
+    display: block;
+}
+.c1-h2{
+    font-size: 16px;
+    font-family: 'Poppins Bold';
+    margin-bottom: 16px;
 }
 .c2{
     padding-block: 56px;
@@ -112,19 +135,22 @@ padding-inline: 0px !important;
     font-size: 16px;
     line-height: 28px;
 }
-.c2-rate{
-    margin-right: 52px;
-}
+
 .c3{
-    padding-top: 176px;
-    padding-inline: 120px;
+    padding-top: 80px;
     background-color: #EBF4FF;
+    background-size: 100% 80%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .c3-blue{
     color: #2E32BA;
     font-size: 16px;
     line-height: 28px;
     font-family: 'Poppins Bold';
+}
+.c3-col-1{
+    padding-bottom: 80px;
 }
 .carousel-h1{
     font-family: 'Poppins Bold';
@@ -133,9 +159,26 @@ font-size: 16px;
 line-height: 28px;
 color: var(--primary-text);
 }
+.carousel-indicators{
+    margin-top: 48px;
+    justify-content: center;
+}
+.carousel-indicators li{
+    width: 18px;
+    height: 6px;
+    background: #C4C4C4;
+    border-radius: 4px;
+    margin: 0px 6px;
+}
+.carousel-indicators .active{
+    background: linear-gradient(90deg, #FF9A9E 0%, #FECFEF 99%);
+    transition-property: background;
+    transition-duration: 1.6s;
+    transition-timing-function: ease;
+}
 .c4{
-    padding-inline: 120px;
-    padding-block: 100px;
+    padding-top: 100px;
+    padding-bottom: 54px;
 }
 .c4-h1{
     margin-bottom: 32px;
@@ -151,7 +194,7 @@ color: var(--primary-text);
     color:var(--active-text);
     font-size: 16px;
     line-height: 28px;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
     font-family: 'Poppins Bold';
 }
 .c4-d1{
@@ -166,6 +209,7 @@ color: var(--primary-text);
     left: 0;
     /* top: -100px; */
     z-index: -1;
+    max-width: 100%;
 }
 .c4-sticker1{
     position: absolute;
@@ -180,22 +224,27 @@ color: var(--primary-text);
     z-index: -1;
     margin-top: 36px;
 }
-.c4-col-1{
-    padding-left: 0;
-    padding-right: 36px;
+.c4-col-1, .c4-col-2{
+  padding-inline: 0px;
 }
-.c4-col-2{
-    padding-left: 36px;
-    padding-right: 0;
+.c4-girl{
+    width: 100%;
+    height: auto;
 }
-
 .c5{
 background-color: #EBFFF0;
-padding: 108px 0px 108px 120px
+padding-block: 108px;
+}
+.c5-h1{
+    margin-top: 32px;
+    margin-bottom: 16px;
 }
 .c5-button{
     border-radius: 100px;
     padding: 12px 24px;
+}
+.c5-sticker{
+  display: none;
 }
 .c6{
     padding-block: 80px;
@@ -213,9 +262,15 @@ padding: 108px 0px 108px 120px
 iframe{
     border-radius: 24px;
 }
+.react-player > div{
+    width: 100% !important;
+    height: 240px !important;
+}
+.react-player > img{
+   display: none;
+}
 .c7{
     padding-block: 72px;
-    padding-inline: 120px;
     background-color: #EBF4FF;
 }
 .c7-h1{
@@ -231,8 +286,6 @@ iframe{
 }
 .c8{
     padding-top: 88px;
-    padding-left: 120px;
-    padding-right: 0;
     padding-bottom: 64px;
 }
 .c8-h1{
@@ -247,12 +300,9 @@ iframe{
 }
 .ques-div{
     padding-block: 72px;
-    padding-left: 64px;
-    padding-right: 120px;
+    padding-inline: 64px;
     background-color: #EBF4FF;
-    border-start-start-radius: 40px;
-    border-end-start-radius: 40px;
-    margin-left: 100px;
+    border-radius: 40px;
 }
 .c8-ques{
 font-style: normal;
@@ -275,6 +325,11 @@ font-style: normal;
 font-size: 16px;
 line-height: 28px;
 color: var(--primary-text);
+padding: 20px;
+border-radius: 16px;
+background-color: #EBF4FF;
+margin-bottom: 12px;
+
 }
 .c8-d1{
 font-style: normal;
@@ -282,6 +337,9 @@ font-weight: normal;
 font-size: 16px;
 line-height: 28px;
 color: var(--primary-text);
+padding-inline: 20px;
+margin-bottom: 12px;
+
 }
 .c8-sticker{
     position: absolute;
@@ -294,7 +352,7 @@ color: var(--primary-text);
 }
 .c9{
     color: white;
-    padding: 90px 120px;
+    padding-block: 32px;
     background-color: #2E32BA;
 }
 .c9 .row{
@@ -324,4 +382,85 @@ font-style: normal;
 font-weight: 500;
 font-size: 18px;
 line-height: 28px;
+}
+@media screen and (min-width: 600px){
+   .c-pad{
+       padding-inline: 120px;
+       text-align: left;
+   }
+   .c-h1{
+    font-size: 32px;
+   }
+   .c1-h1{
+    font-family: 'Poppins Bold';
+    font-size: 48px;
+}
+.c1-h2{
+    margin-bottom: 0px;
+}
+.c1-br{
+    display: block;
+}
+   .c2-rate{
+    margin-right: 52px;
+}
+.c3{
+    padding-top: 80px;
+}
+.carousel-indicators li{
+    width: 54px;
+}
+.c4{
+    padding-block: 100px;
+}
+.c4-girl{
+    width: 600px;
+    height: 410px;
+}
+.c4-col-1{
+    padding-left: 0;
+    padding-right: 36px;
+}
+.c4-col-2{
+    padding-left: 36px;
+    padding-right: 0;
+}
+.c4-p1{
+    margin-bottom: 24px;
+}
+.c5-h1{
+    margin-top: 0;
+    margin-bottom: 32px;
+}
+.c5-sticker{
+    position: absolute;
+    right: 16%;
+    width: 440px;
+    margin-top: 24px;
+    display: block;
+}
+.ques-div{
+    padding-block: 72px;
+    padding-left: 64px;
+    padding-right: 120px;
+    background-color: #EBF4FF;
+    border-start-start-radius: 40px;
+    border-end-start-radius: 40px;
+    border-start-end-radius: 0px;
+    border-end-end-radius: 0px;
+    /* margin-left: 100px; */
+}
+.react-player > div{
+    width: 570px !important;
+    height: 300px !important;
+}
+.react-player > img{
+    display: block;
+ }
+.c8-accordion{
+    padding-right: 112px;
+}
+.n-link-faq{
+    margin-right: 32px;
+}
 }

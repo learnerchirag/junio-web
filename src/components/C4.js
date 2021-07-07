@@ -8,15 +8,10 @@ class C4 extends Component {
   render() {
     return (
       <React.Fragment>
-        <img
-          className="c4-pattern"
-          src={pattern}
-          width="474px"
-          height="504px"
-        />
+        <img className="c4-pattern" src={pattern} width="auto" height="504px" />
         <img className="c4-sticker2" src={sticker2} height="64px" />
         <img className="c4-sticker1" src={sticker1} height="332px" />
-        <Container fluid className="c4">
+        <Container fluid id="features" className="c4 c-pad">
           <div className="c-h1 c4-h1 text-center">
             Junio card is the best gift for the juniors you love!
           </div>
@@ -26,15 +21,15 @@ class C4 extends Component {
             all their online and offline expenses
           </div>
           <Row>
-            <Col className="c4-col-1">
-              <img src={girl} width="600px" height="410px" />
+            <Col className="c4-col-1 col-lg-auto col-12">
+              <img className="c4-girl" src={girl} />
             </Col>
             <Col className="c4-col-2">
-              <div className="d-flex flex-column justify-content-center">
+              <div className="d-flex flex-column justify-content-center mt-5 mt-lg-0">
                 <div className="c4-p1">Instant Transfers​</div>
                 <div className="c4-d1">
                   Junio is your child's own smart card for all their online and
-                  offline expenses. With the Junio card,{" "}
+                  offline expenses. With the Junio card,
                 </div>
                 <div className="c4-p1">Tasks for children</div>
                 <div className="c4-d1">

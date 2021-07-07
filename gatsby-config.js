@@ -9,6 +9,8 @@ module.exports = {
       resolve: `gatsby-plugin-intercom`,
       options: {
         appId: "tknx8hq0",
+        include_in_development: true,
+        delay_timeout: 0,
       },
     },
   ],

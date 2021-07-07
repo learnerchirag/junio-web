@@ -1,6 +1,8 @@
+import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import classNames from "classnames";
 import React, { Component } from "react";
-import { Button, Container } from "react-bootstrap";
+import { Accordion, Button, Container } from "react-bootstrap";
 import sticker from "../images/c8-sticker.png";
 class C8 extends Component {
   state = {
@@ -8,17 +10,22 @@ class C8 extends Component {
   };
   render() {
     return (
-      <Container fluid className="c8">
-        <div className="d-flex">
-          <div>
+      <Container fluid id="faq" className="c8 pe-md-0 c-pad">
+        <div className="row d-flex">
+          <div className="col col-12 col-md-8 c8-accordion">
             <div className="c-h1 c8-h1">Your questions answered</div>
             <div
-              className="c8-p1"
+              className="c8-p1 d-flex justify-content-between"
               onClick={() => {
                 this.setState({ ans: 1 });
               }}
             >
               Easy to Use
+              {this.state.ans === 1 ? (
+                <FontAwesomeIcon icon={faChevronUp} />
+              ) : (
+                <FontAwesomeIcon icon={faChevronDown} />
+              )}
             </div>
             <div
               className="c8-d1"
@@ -29,14 +36,18 @@ class C8 extends Component {
               smart card for all their online and offline expenses. With the
               Junio card,
             </div>
-            <div className="c8-separator"></div>
             <div
-              className="c8-p1"
+              className="c8-p1 d-flex justify-content-between"
               onClick={() => {
                 this.setState({ ans: 2 });
               }}
             >
-              Variety of Designs
+              Variety of Designs Easy to Use
+              {this.state.ans === 2 ? (
+                <FontAwesomeIcon icon={faChevronUp} />
+              ) : (
+                <FontAwesomeIcon icon={faChevronDown} />
+              )}
             </div>
             <div
               className="c8-d1"
@@ -47,14 +58,18 @@ class C8 extends Component {
               smart card for all their online and offline expenses. With the
               Junio card,
             </div>
-            <div className="c8-separator"></div>
             <div
-              className="c8-p1"
+              className="c8-p1 d-flex justify-content-between"
               onClick={() => {
                 this.setState({ ans: 3 });
               }}
             >
-              Feel our Design
+              Feel our Design Easy to Use
+              {this.state.ans === 3 ? (
+                <FontAwesomeIcon icon={faChevronUp} />
+              ) : (
+                <FontAwesomeIcon icon={faChevronDown} />
+              )}
             </div>
             <div
               className="c8-d1"
@@ -66,7 +81,7 @@ class C8 extends Component {
               Junio card,
             </div>
           </div>
-          <div className="ques-div">
+          <div className="ques-div col col-md-4 mt-4 my-md-auto">
             <img className="c8-sticker" src={sticker} height="168px" />
             <div className="c8-ques">Have a Question?</div>
             <div className="c8-ans">

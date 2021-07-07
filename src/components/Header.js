@@ -45,12 +45,12 @@ class Header extends Component {
           expand={this.state.wWidth >= 1400 ? true : false}
           className={classNames({
             "nav-down": !this.state.isTop,
+            "c-pad": true,
           })}
           // expand="xl"
-          style={{ paddingInline: "120px" }}
         >
           <Navbar.Brand
-            href="#home"
+            href="/"
             style={{
               color: "white",
               fontSize: "32px",
@@ -83,12 +83,14 @@ class Header extends Component {
               className="ml-auto"
               style={{ color: "white", fontSize: "normal", marginLeft: "auto" }}
             >
-              <Nav.Link href="/" className="active">
+              <Nav.Link href="#home" className="active">
                 Home
               </Nav.Link>
-              <Nav.Link href="/startupinsight">For parents</Nav.Link>
-              <Nav.Link href="/team">For kids</Nav.Link>
-              <Nav.Link href="/faq">FAQs</Nav.Link>
+              <Nav.Link href="#features">Features</Nav.Link>
+              <Nav.Link href="#testimonials">Testimonials</Nav.Link>
+              <Nav.Link href="#faq" className="n-link-faq">
+                FAQs
+              </Nav.Link>
               <Button
                 className="btn-sec"
                 style={{
