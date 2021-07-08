@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Button, Col, Container, FormControl, Row } from "react-bootstrap";
-
+import { Link } from "gatsby";
 class C9 extends Component {
   render() {
     return (
@@ -48,8 +48,15 @@ class C9 extends Component {
           style={{ justifyContent: "space-between" }}
         >
           <Col className="d-flex col-12 col-lg-6">
-            <div>Terms of Services</div>
-            <div className="mx-5">Privacy Policy</div>
+            {/*// <link href="https://junio.in/terms/" target="_blank">
+            //   Terms of Services
+      // </link>*/}
+            <a href="https://junio.in/terms/" target="_blank">
+              Terms of Services
+            </a>
+            <a href="https://junio.in/terms/" target="_blank" className="mx-5">
+              Privacy Policy
+            </a>
           </Col>
           <Col className="text-start text-lg-end mt-4 mt-md-0">
             2020 Firstpay Technologies Private Limited copyright

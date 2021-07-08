@@ -17,7 +17,7 @@ class C4 extends Component {
           </div>
           <div className="c4-h2 text-center">
             Junio is your
-            <span className="bold">child's own smart card for</span>
+            <span className="bold"> child's own smart card for </span>
             all their online and offline expenses
           </div>
           <Row>
@@ -28,13 +28,13 @@ class C4 extends Component {
               <div className="d-flex flex-column justify-content-center mt-5 mt-lg-0">
                 <div className="c4-p1">Instant Transfers​</div>
                 <div className="c4-d1">
-                  Junio is your child's own smart card for all their online and
-                  offline expenses. With the Junio card,
+                  Transfer money to your child’s account anytime, anywhere. And
+                  avoid the panic of any emergency.
                 </div>
                 <div className="c4-p1">Tasks for children</div>
                 <div className="c4-d1">
-                  Junio is your child's own smart card for all their online and
-                  offline expenses. With the Junio card,
+                  Children can earn pocket money when they complete tasks that
+                  you set. Incentivise desired behaviour with bonus additions
                 </div>
                 <div className="c4-p1">Allowance on autopilot​</div>
                 <div className="c4-d1">

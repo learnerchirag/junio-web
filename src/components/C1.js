@@ -11,7 +11,41 @@ import {
 import background from "../images/c1-back.png";
 import googlePlay from "../images/hero-google-play.png";
 import apple from "../images/hero-apple.png";
+import axios from "axios";
+import cogoToast from "cogo-toast";
 class C1 extends Component {
+  state = {
+    phone: "",
+  };
+  componentDidMount() {}
+  handleInput = (e) => {
+    this.setState({
+      [e.target.name]: e.target.value,
+    });
+  };
+  sendLink = () => {
+    var phone = this.state.phone;
+    console.log(phone, "phone");
+    if (this.state.phone.length == 10) {
+      axios
+        .post("https://falcon.junio.in/notification/send-invite", {
+          mobile_number: this.state.phone,
+        })
+        .then((res) => {
+          if (res.data.status === "success") {
+            cogoToast.success("Link sent to you mobile number via SMS");
+          } else {
+            cogoToast.error(res.data.status);
+          }
+        })
+        .catch((err) => {
+          cogoToast.error(err);
+          console.log(err);
+        });
+    } else {
+      cogoToast.error("Please enter a valid mobile number");
+    }
+  };
   render() {
     return (
       <Container
@@ -20,15 +54,17 @@ class C1 extends Component {
         className="c1 c-pad"
         style={{
           backgroundImage: `url(${background})`,
+          paddingBottom: "16px",
         }}
       >
         <Row className="h-100">
-          <Col className="d-flex flex-column justify-content-center col-12 col-md-6">
+          <Col className="d-flex flex-column justify-content-end col-12 col-lg-6">
             <h1 className="c1-h1 mb-5">
               The Smart Card
-              <br className="c1-br" /> for Child's<span> pocket money</span>
+              <br className="c1-br" /> for Child's
+              <span> pocket money</span>
             </h1>
-            <div className="c1-h2">Get our ios or Android app</div>
+            <div className="c1-h2">Get our iOS or Android app</div>
             <div
               style={{
                 marginBottom: "36px",
@@ -66,18 +102,19 @@ class C1 extends Component {
                   placeholder="9999999999"
                   aria-label=""
                   aria-describedby="basic-addon1"
-                  style={{ border: "none" }}
-                  className="ps-0"
-                />
-                <Button
-                  className="btn-gradient"
                   style={{
-                    padding: "16px 40px",
-                    borderRadius: "30px",
-                    marginLeft: "auto",
+                    border: "none",
+                    marginLeft: "-10px",
+                    paddingLeft: "10px",
                   }}
-                >
-                  Send link
+                  type="number"
+                  maxLength="10"
+                  onChange={this.handleInput}
+                  name="phone"
+                  value={this.state.phone}
+                />
+                <Button className="btn-gradient s-link" onClick={this.sendLink}>
+                  Get link
                 </Button>
               </div>
             </Card>

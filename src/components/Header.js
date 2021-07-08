@@ -34,6 +34,17 @@ class Header extends Component {
       });
     }
   };
+  handleStyle = () => {
+    setTimeout(() => {
+      if (document.getElementsByClassName("show").length > 0) {
+        console.log(document.getElementsByClassName("show"));
+        document.getElementById("navbar").style.background =
+          "linear-gradient(90deg, #5271C4 0%, #B19FFF 48%, #ECA1FE 100%)";
+      } else {
+        document.getElementById("navbar").style.background = "none";
+      }
+    }, 500);
+  };
   render() {
     return (
       <Container
@@ -42,6 +53,7 @@ class Header extends Component {
         style={{ position: "fixed", top: "0px", zIndex: 4, width: "100%" }}
       >
         <Navbar
+          id="navbar"
           expand={this.state.wWidth >= 1400 ? true : false}
           className={classNames({
             "nav-down": !this.state.isTop,
@@ -70,7 +82,11 @@ class Header extends Component {
             aria-controls="basic-navbar-nav navbar-dark"
             style={{ color: "white", borderColor: "white" }}
           >
-            <FontAwesomeIcon icon={faBars} color="white" />
+            <FontAwesomeIcon
+              icon={faBars}
+              color="white"
+              onClick={this.handleStyle}
+            />
           </Navbar.Toggle>
           <Navbar.Collapse
             id="basic-navbar-nav"
@@ -92,12 +108,13 @@ class Header extends Component {
                 FAQs
               </Nav.Link>
               <Button
-                className="btn-sec"
+                className="btn-pri"
                 style={{
                   borderRadius: "60px",
+                  paddingInline: "16px",
                 }}
               >
-                Order Card
+                Get Help
               </Button>
             </Nav>
           </Navbar.Collapse>

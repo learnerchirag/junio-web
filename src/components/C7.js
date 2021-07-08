@@ -7,10 +7,10 @@ class C7 extends Component {
     return (
       <Container fluid id="testimonials" className="c7 text-center c-pad">
         <div className="c-h1 c7-h1">What People Say About Us</div>
-        <div className="row">
+        <div className="row mx-auto">
           <Col className="d-md-none">
             <Carousel>
-              <Carousel.Item className="mb-5">
+              <Carousel.Item className="">
                 <div className="carousel2 d-flex justify-content-center">
                   <div>
                     <img className="mx-auto" src={person} width="120px" />
@@ -29,7 +29,7 @@ class C7 extends Component {
                   </div>
                 </div>
               </Carousel.Item>
-              <Carousel.Item className="mb-5">
+              <Carousel.Item className="">
                 <div className="carousel2 d-flex justify-content-center">
                   <div>
                     <img className="mx-auto" src={person} width="120px" />
@@ -48,7 +48,7 @@ class C7 extends Component {
                   </div>
                 </div>
               </Carousel.Item>
-              <Carousel.Item className="mb-5">
+              <Carousel.Item className="">
                 <div className="carousel2 d-flex justify-content-center">
                   <div>
                     <img className="mx-auto" src={person} width="120px" />
@@ -67,7 +67,7 @@ class C7 extends Component {
                   </div>
                 </div>
               </Carousel.Item>
-              <Carousel.Item className="mb-5">
+              <Carousel.Item className="">
                 <div className="carousel2 d-flex justify-content-center">
                   <div>
                     <img className="mx-auto" src={person} width="120px" />
@@ -89,8 +89,8 @@ class C7 extends Component {
             </Carousel>
           </Col>
           <Col className="d-none d-md-block">
-            <Carousel>
-              <Carousel.Item className="mb-5">
+            <Carousel interval={null}>
+              <Carousel.Item className="">
                 <div className="carousel2 d-flex justify-content-center">
                   <div>
                     <img className="mx-auto" src={person} width="120px" />
@@ -124,7 +124,7 @@ class C7 extends Component {
                   </div>
                 </div>
               </Carousel.Item>
-              <Carousel.Item className="mb-5">
+              <Carousel.Item className="">
                 <div className="carousel2 d-flex justify-content-center">
                   <div>
                     <img className="mx-auto" src={person} width="120px" />
@@ -161,6 +161,9 @@ class C7 extends Component {
             </Carousel>
           </Col>
         </div>
+        {/*} <div className="c7-h2 ">
+          See over 1000+ customer reviews on Google Play
+    </div>*/}
       </Container>
     );
   }
