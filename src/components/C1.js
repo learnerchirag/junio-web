@@ -34,6 +34,7 @@ class C1 extends Component {
         .then((res) => {
           if (res.data.status === "success") {
             cogoToast.success("Link sent to you mobile number via SMS");
+            this.setState({ phone: "" });
           } else {
             cogoToast.error(res.data.status);
           }
