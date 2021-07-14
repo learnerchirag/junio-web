@@ -89,10 +89,16 @@ class C8 extends Component {
             <img className="c8-sticker" src={sticker} height="168px" />
             <div className="c8-ques">Have a Question?</div>
             <div className="c8-ans">
-              Check out our answers to frequently asked questions or contact us.
+              Check out our answers to frequently asked questions
             </div>
             <div>
-              <Button className="btn-pri">Get Help</Button>
+              <Button
+                className="btn-pri"
+                href="https://intercom.help/junioin/en/"
+                target="_blank"
+              >
+                View more FAQs
+              </Button>
             </div>
           </div>
         </div>

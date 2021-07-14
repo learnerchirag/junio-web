@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import { Card, Carousel, Col, Container } from "react-bootstrap";
+import { Card, Carousel, Col, Container, Row } from "react-bootstrap";
 import fig1 from "../images/c7-fig1.png";
-import person from "../images/c7-person.png";
+import person from "../images/quotes.png";
 class C7 extends Component {
   render() {
     return (
@@ -13,17 +13,46 @@ class C7 extends Component {
               <Carousel.Item className="">
                 <div className="carousel2 d-flex justify-content-center">
                   <div>
-                    <img className="mx-auto" src={person} width="120px" />
                     <Card className="text-center m-3 p-3 c-shadow">
+                      <img className="mx-auto" src={person} />
                       <div className="c-h2 carousel2-h1">
-                        Junio is your child's own{" "}
-                        <span style={{ fontFamily: "Poppins Bold" }}>
-                          smart card for all their online
-                        </span>{" "}
-                        and offline expenses. With the Junio card, Junio is your
-                        child's own smart card
+                        I love Junio. The pocket money that I earn has
+                        doubled because of the Junio app
                       </div>
-                      <div className="c6-green">Arjun Kapoor</div>
+                      <div className="c6-green">Rahul</div>
+                      <div className="c2-h2">12 years young</div>
+                    </Card>
+                  </div>
+                </div>
+              </Carousel.Item>
+              <Carousel.Item className="">
+                <div className="carousel2 d-flex justify-content-center">
+                  <div>
+                    <Card className="text-center m-3 p-3 c-shadow">
+                      <img className="mx-auto" src={person} />
+                      <div className="c-h2 carousel2-h1">
+                        I love showing off  my own, cool Junio card when I an
+                        purchasing anything..makes my friends go all jealous:)
+                      </div>
+                      <div className="c6-green">Anshita</div>
+                      <div className="c2-h2">14 years young</div>
+                    </Card>
+                  </div>
+                </div>
+              </Carousel.Item>
+              <Carousel.Item className="">
+                <div className="carousel2 d-flex justify-content-center">
+                  <div>
+                    <Card className="text-center m-3 p-3 c-shadow">
+                      <img className="mx-auto" src={person} />
+                      <div className="c-h2 carousel2-h1">
+                        Great initiative. I have ordered Junio cards for both my
+                        children. I am already seeing signs that they are more
+                        careful with their own money after having their Junio
+                        cards. Also, they are becoming more independent
+                        financially, which is a great thing. Well done, Junio!
+                      </div>
+                      <div className="c6-green">Lakshmi Arora</div>
                       <div className="c2-h2">Parent</div>
                     </Card>
                   </div>
@@ -32,55 +61,14 @@ class C7 extends Component {
               <Carousel.Item className="">
                 <div className="carousel2 d-flex justify-content-center">
                   <div>
-                    <img className="mx-auto" src={person} width="120px" />
                     <Card className="text-center m-3 p-3 c-shadow">
+                      <img className="mx-auto" src={person} />
                       <div className="c-h2 carousel2-h1">
-                        Junio is your child's own{" "}
-                        <span style={{ fontFamily: "Poppins Bold" }}>
-                          smart card for all their online
-                        </span>{" "}
-                        and offline expenses. With the Junio card, Junio is your
-                        child's own smart card
+                        Very nice, smooth app. Took me less than 5 minutes to
+                        order a card for my daughter Neera. Now I don't need to
+                        worry whether she has money with her when she goes out
                       </div>
-                      <div className="c6-green">Arjun Kapoor</div>
-                      <div className="c2-h2">Parent</div>
-                    </Card>
-                  </div>
-                </div>
-              </Carousel.Item>
-              <Carousel.Item className="">
-                <div className="carousel2 d-flex justify-content-center">
-                  <div>
-                    <img className="mx-auto" src={person} width="120px" />
-                    <Card className="text-center m-3 p-3 c-shadow">
-                      <div className="c-h2 carousel2-h1">
-                        Junio is your child's own{" "}
-                        <span style={{ fontFamily: "Poppins Bold" }}>
-                          smart card for all their online
-                        </span>{" "}
-                        and offline expenses. With the Junio card, Junio is your
-                        child's own smart card
-                      </div>
-                      <div className="c6-green">Arjun Kapoor</div>
-                      <div className="c2-h2">Parent</div>
-                    </Card>
-                  </div>
-                </div>
-              </Carousel.Item>
-              <Carousel.Item className="">
-                <div className="carousel2 d-flex justify-content-center">
-                  <div>
-                    <img className="mx-auto" src={person} width="120px" />
-                    <Card className="text-center m-3 p-3 c-shadow">
-                      <div className="c-h2 carousel2-h1">
-                        Junio is your child's own{" "}
-                        <span style={{ fontFamily: "Poppins Bold" }}>
-                          smart card for all their online
-                        </span>{" "}
-                        and offline expenses. With the Junio card, Junio is your
-                        child's own smart card
-                      </div>
-                      <div className="c6-green">Arjun Kapoor</div>
+                      <div className="c6-green">Vikram Talwar</div>
                       <div className="c2-h2">Parent</div>
                     </Card>
                   </div>
@@ -89,73 +77,61 @@ class C7 extends Component {
             </Carousel>
           </Col>
           <Col className="d-none d-md-block">
-            <Carousel interval={null}>
+            <Carousel>
               <Carousel.Item className="">
                 <div className="carousel2 d-flex justify-content-center">
-                  <div>
-                    <img className="mx-auto" src={person} width="120px" />
-                    <Card className="text-center m-3 p-3 c-shadow">
+                  <Col className="col-6">
+                    <Card className="text-center  mx-3 p-3 c-shadow">
+                      <img className="mx-auto" src={person} />
                       <div className="c-h2 carousel2-h1">
-                        Junio is your child's own{" "}
-                        <span style={{ fontFamily: "Poppins Bold" }}>
-                          smart card for all their online
-                        </span>{" "}
-                        and offline expenses. With the Junio card, Junio is your
-                        child's own smart card
+                        I love Junio. The pocket money that I earn has
+                        doubled because of the Junio app
                       </div>
-                      <div className="c6-green">Arjun Kapoor</div>
-                      <div className="c2-h2">Parent</div>
+                      <div className="c6-green mt-auto">Rahul</div>
+                      <div className="c2-h2">12 years young</div>
                     </Card>
-                  </div>
-                  <div>
-                    <img className="mx-auto" src={person} width="120px" />
-                    <Card className="text-center m-3 p-3 c-shadow">
+                  </Col>
+                  <Col className="col-6">
+                    <Card className="text-center  mx-3 p-3 c-shadow">
+                      <img className="mx-auto" src={person} />
                       <div className="c-h2 carousel2-h1">
-                        Junio is your child's own{" "}
-                        <span style={{ fontFamily: "Poppins Bold" }}>
-                          smart card for all their online
-                        </span>{" "}
-                        and offline expenses. With the Junio card, Junio is your
-                        child's own smart card
+                        I love showing off  my own, cool Junio card when I an
+                        purchasing anything..makes my friends go all jealous:)
                       </div>
-                      <div className="c6-green">Arjun Kapoor</div>
-                      <div className="c2-h2">Parent</div>
+                      <div className="c6-green mt-auto">Anshita</div>
+                      <div className="c2-h2">14 years young</div>
                     </Card>
-                  </div>
+                  </Col>
                 </div>
               </Carousel.Item>
               <Carousel.Item className="">
                 <div className="carousel2 d-flex justify-content-center">
-                  <div>
-                    <img className="mx-auto" src={person} width="120px" />
-                    <Card className="text-center m-3 p-3 c-shadow">
+                  <Col className="col-6">
+                    <Card className="text-center  mx-3 p-3 c-shadow">
+                      <img className="mx-auto" src={person} />
                       <div className="c-h2 carousel2-h1">
-                        Junio is your child's own{" "}
-                        <span style={{ fontFamily: "Poppins Bold" }}>
-                          smart card for all their online
-                        </span>{" "}
-                        and offline expenses. With the Junio card, Junio is your
-                        child's own smart card
+                        Great initiative. I have ordered Junio cards for both my
+                        children. I am already seeing signs that they are more
+                        careful with their own money after having their Junio
+                        cards. Also, they are becoming more independent
+                        financially, which is a great thing. Well done, Junio!
                       </div>
-                      <div className="c6-green">Arjun Kapoor</div>
+                      <div className="c6-green mt-auto">Lakshmi Arora</div>
                       <div className="c2-h2">Parent</div>
                     </Card>
-                  </div>
-                  <div>
-                    <img className="mx-auto" src={person} width="120px" />
-                    <Card className="text-center m-3 p-3 c-shadow">
+                  </Col>
+                  <Col className="col-6">
+                    <Card className="text-center  mx-3 p-3 c-shadow">
+                      <img className="mx-auto" src={person} />
                       <div className="c-h2 carousel2-h1">
-                        Junio is your child's own{" "}
-                        <span style={{ fontFamily: "Poppins Bold" }}>
-                          smart card for all their online
-                        </span>{" "}
-                        and offline expenses. With the Junio card, Junio is your
-                        child's own smart card
+                        Very nice, smooth app. Took me less than 5 minutes to
+                        order a card for my daughter Neera. Now I don't need to
+                        worry whether she has money with her when she goes out
                       </div>
-                      <div className="c6-green">Arjun Kapoor</div>
+                      <div className="c6-green mt-auto">Vikram Talwar</div>
                       <div className="c2-h2">Parent</div>
                     </Card>
-                  </div>
+                  </Col>
                 </div>
               </Carousel.Item>
             </Carousel>

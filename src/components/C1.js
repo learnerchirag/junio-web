@@ -55,6 +55,7 @@ class C1 extends Component {
         style={{
           backgroundImage: `url(${background})`,
           paddingBottom: "16px",
+          backgroundAttachment: "fixed",
         }}
       >
         <Row className="h-100">
@@ -64,7 +65,7 @@ class C1 extends Component {
               <br className="c1-br" /> for Child's
               <span> pocket money</span>
             </h1>
-            <div className="c1-h2">Get our iOS or Android app</div>
+            <div className="c1-h2">Get our Android app</div>
             <div
               style={{
                 marginBottom: "36px",
@@ -119,10 +120,10 @@ class C1 extends Component {
               </div>
             </Card>
 
-            <div>
+            {/* {/* <div>
               App available on <img src={googlePlay} height="40px" />{" "}
-              <img src={apple} height="40px" />
-            </div>
+              {/* <img src={apple} height="40px" /> */}
+            {/* </div> */}
           </Col>
         </Row>
       </Container>

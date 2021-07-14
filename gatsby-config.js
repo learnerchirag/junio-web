@@ -5,6 +5,7 @@ module.exports = {
   plugins: [
     "gatsby-plugin-netlify-cms",
     "gatsby-plugin-gatsby-cloud",
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-plugin-intercom`,
       options: {

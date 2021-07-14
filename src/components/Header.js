@@ -27,7 +27,7 @@ class Header extends Component {
         });
       });
       document.addEventListener("scroll", () => {
-        const isTop = window.scrollY < 100;
+        const isTop = window.scrollY < 40;
         if (isTop !== this.state.isTop) {
           this.setState({ isTop });
         }
@@ -65,7 +65,6 @@ class Header extends Component {
             href="/"
             style={{
               color: "white",
-              fontSize: "32px",
               fontWeight: "700",
               fontFamily: "Helvetica",
             }}
@@ -113,6 +112,8 @@ class Header extends Component {
                   borderRadius: "60px",
                   paddingInline: "16px",
                 }}
+                href="https://intercom.help/junioin/en/"
+                target="_blank"
               >
                 Get Help
               </Button>

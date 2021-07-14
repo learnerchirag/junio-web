@@ -6,7 +6,22 @@ import fig2 from "../images/c3-fig2.png";
 import fig3 from "../images/c3-fig3.png";
 import fig4 from "../images/c3-fig4.png";
 import back from "../images/c3-back.png";
+
+// import simpleParallax from "simple-parallax-js";
+
 class C3 extends Component {
+  componentDidMount() {
+    if (window !== undefined) {
+      const simpleParallax = require("simple-parallax-js");
+      var image = document.getElementsByClassName("sp-thumb");
+      new simpleParallax(image, {
+        orientation: "left",
+        overflow: "false",
+        maxTransition: 60,
+      });
+    }
+  }
+
   render() {
     return (
       <React.Fragment>
@@ -133,7 +148,7 @@ class C3 extends Component {
                       <Card className="text-center my-0 m-3 p-3 c-shadow">
                         <img
                           className="mx-auto mb-4"
-                          src={fig1}
+                          src={fig2}
                           // width="76px"
                           height="56px"
                         />
@@ -191,7 +206,7 @@ class C3 extends Component {
               className="c3-col-2 d-none d-md-flex flex-column-reverse"
               md="4"
             >
-              <img src={phone} height="520px" />
+              <img className="sp-thumb" src={phone} height="520px" />
             </Col>
           </Row>
         </Container>

@@ -1,12 +1,20 @@
 import React, { Component } from "react";
 import { Button, Col, Container, FormControl, Row } from "react-bootstrap";
 import { Link } from "gatsby";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebookF,
+  faInstagram,
+  faLinkedin,
+  faTwitter,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
+
 class C9 extends Component {
   render() {
     return (
       <Container fluid className="c9 c-pad">
-        <Row>
-          {/*<Col className="col-12 col-md-4 order-3 order-md-1 mt-4 mt-md-0">
+        {/*<Col className="col-12 col-md-4 order-3 order-md-1 mt-4 mt-md-0">
             <div className="c9-h1">
               Send Junio App Link to your mobile number
             </div>
@@ -42,7 +50,6 @@ class C9 extends Component {
             <div>or Learn More</div>
           </Col>
         */}
-        </Row>
         <div
           className="row d-flex c9-d1"
           style={{ justifyContent: "space-between" }}
@@ -62,6 +69,39 @@ class C9 extends Component {
             2020 Firstpay Technologies Private Limited copyright
           </Col>
         </div>
+        <Row className="justify-content-end">
+          <Col className="col-md-auto px-2">
+            <a target="_blank" href="https://www.facebook.com/JunioIndia">
+              <FontAwesomeIcon icon={faFacebookF} />
+            </a>
+          </Col>
+          <Col className="col-md-auto px-2">
+            <a target="_blank" href="https://www.instagram.com/junio_in/">
+              <FontAwesomeIcon icon={faInstagram} />
+            </a>
+          </Col>
+          <Col className="col-md-auto px-2">
+            <a
+              target="_blank"
+              href="https://www.youtube.com/channel/UCZIRTZYoelCMox8Gvp6SOpw"
+            >
+              <FontAwesomeIcon icon={faYoutube} />
+            </a>
+          </Col>
+          <Col className="col-md-auto px-2">
+            <a target="_blank" href="https://twitter.com/junio_in">
+              <FontAwesomeIcon icon={faTwitter} />
+            </a>
+          </Col>
+          <Col className="col-md-auto px-2">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/company/junio-smart-card/"
+            >
+              <FontAwesomeIcon icon={faLinkedin} />
+            </a>
+          </Col>
+        </Row>
       </Container>
     );
   }
